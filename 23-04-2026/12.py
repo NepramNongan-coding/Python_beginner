@@ -1,0 +1,8 @@
+x=int(input("Enter the days of work done by A:"))
+print("The no. of days of work done by A is", x)
+y=int(input("Enter the days of work done by B:"))
+print("The no. of days of work done by B is", y)
+z=int(input("Enter the days of work done by C:"))
+print("The no. of days of work done by C is", z)
+total_days=(x*y*z)/((x*y)+(y*z)+(x*z))
+print("the number of days if they work together is", total_days)

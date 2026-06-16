@@ -1,0 +1,6 @@
+fname= input("Enter your name: ")
+print("My name", sep=' ', end="\n")
+print("is", fname)
+age=int(input("Enter your age: "))
+print("My age is", age)
+print(type(age))
