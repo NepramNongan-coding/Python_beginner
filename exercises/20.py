@@ -1,3 +1,4 @@
+#to find the energy with respect to its mass
 m = int(input("Enter mass: "))
 c = 3*(10**8)
 E = m*(c**2)
