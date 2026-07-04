@@ -12,7 +12,7 @@ print("The maximum number is: ", max(a,b,c,d,e))
 count = 1
 while count < 6:
     print("Enter number ", count)
-    user_input = input()
+    user_input = int(input())
     
     if count == 1:
         a = user_input
