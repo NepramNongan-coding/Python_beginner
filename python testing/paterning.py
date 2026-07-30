@@ -1,19 +1,52 @@
+# import turtle
+# import math
+# screen = turtle.Screen()
+# screen.bgcolor("black")
+# t = turtle.Turtle()
+# t.speed(1)
+# t.hideturtle()
+# t.penup()
+# t.color("#ffb6c1")
+# for scale in range(11, 17):
+#     for i in range(120):
+#         angle = i*(math.pi * 2) /120
+        
+#         x = 16 *(math.sin(angle)**3)* scale
+#         y = (13*math.cos(angle) + 5*math.cos(2*angle)+2*math.cos(3*angle)+ math.cos(4*angle))* scale
+#         t.goto(x,y)
+#         t.write("Test",align ="center",font = ("Arial", 8,"bold"))
+
+# turtle.done()
+
 import turtle
 import math
+
+# Screen setup
 screen = turtle.Screen()
 screen.bgcolor("black")
+
+# Turtle setup
 t = turtle.Turtle()
-t.speed(1)
+t.speed(0)          # Fastest drawing
 t.hideturtle()
 t.penup()
-t.color("#ffb6c1")
-for scale in range(11, 17):
-    for i in range(120):
-        angle = i*(math.pi * 2) /120
-        
-        x = 16 *(math.sin(angle)**3)* scale
-        y = (13*math.cos(angle) + 5*math.cos(2*angle)+2*math.cos(3*angle)+ math.cos(4*angle))* scale
-        t.goto(x,y)
-        t.write("Test",align ="center",font = ("Arial", 8,"bold"))
+t.color("#2915c3")  # Pink color
+
+scale = 15
+
+# Draw the heart using the word "Nongan"
+for i in range(300):
+    angle = 2 * math.pi * i / 300
+
+    x = 16 * (math.sin(angle) ** 3) * scale
+    y = (
+        13 * math.cos(angle)
+        - 5 * math.cos(2 * angle)
+        - 2 * math.cos(3 * angle)
+        - math.cos(4 * angle)
+    ) * scale
+
+    t.goto(x, y)
+    t.write("Nongan", align="center", font=("Arial", 8, "bold"))
 
 turtle.done()
