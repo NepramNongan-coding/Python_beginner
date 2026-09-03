@@ -1,4 +1,5 @@
 #accept two integers and display their sum,difference,product,quotient and remainder
+
 a = int(input("Enter the first number:"))
 b = int(input("Enter the second number:"))
 

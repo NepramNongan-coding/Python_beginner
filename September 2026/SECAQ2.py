@@ -1,4 +1,5 @@
 # swap two numbers using third variable
+
 a = 2
 b = 3
 
